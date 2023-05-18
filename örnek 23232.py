@@ -28,7 +28,9 @@ class magaza_sinifi:
     def set_satis_tutari(self, satis_tutari):
         self.__satis_tutari = satis_tutari
     
-    
+    def __str__(self):
+        return f"Mağaza adı: {self.__magaza_adi}, Satıcının adı: {self.__satici_adi}, Satıcının cinsi: {self.__satici_cinsi}, satış adedi {self.__satis_tutari}"
+
 
         
     
