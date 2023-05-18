@@ -41,7 +41,9 @@ def main():
         if magaza_adi=="h" or magaza_adi=="H":
             break
 
-        
+        satici_adi=input("satici adi giriniz: ")
+        satici_cinsi=input("satici cinsini gir(beyaz eşya,tv,bilgisayar vb.): ")
+
         satis_tutari=float(input("satiş tutarini giriniz: "))
         a = magaza_sinifi(magaza_adi, satici_adi, satici_cinsi,satis_tutari)
         if magaza_adi  in store:
@@ -51,11 +53,12 @@ def main():
             store[magaza_adi]={"satislar":[satis_tutari],"store":[a]}
 
     for magaza in store:
-        
+        print(f"{magaza} mağazasında toplam satış tutari:{magaza_satis_tutar(store[magaza])}")
         for a in store[magaza]["store"]:
             print(a)
 def magaza_satis_tutar(magaza_dict):
-        
+        toplam_satis_tutari=0
+        satislar = magaza_dict["satislar"]
         toplam_satis_tutari = sum(satislar)
         return toplam_satis_tutari
 main()
