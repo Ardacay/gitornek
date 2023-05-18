@@ -51,7 +51,8 @@ def main():
         for a in store[magaza]["store"]:
             print(a)
 def magaza_satis_tutar(magaza_dict):
-        
+        toplam_satis_tutari=0
+        satislar = magaza_dict["satislar"]
         toplam_satis_tutari = sum(satislar)
         return toplam_satis_tutari
 main()
