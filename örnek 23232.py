@@ -35,7 +35,9 @@ def main():
         if magaza_adi=="h" or magaza_adi=="H":
             break
 
-        
+        satici_adi=input("satici adi giriniz: ")
+        satici_cinsi=input("satici cinsini gir(beyaz eşya,tv,bilgisayar vb.): ")
+
         satis_tutari=float(input("satiş tutarini giriniz: "))
         a = magaza_sinifi(magaza_adi, satici_adi, satici_cinsi,satis_tutari)
         if magaza_adi  in store:
