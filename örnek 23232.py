@@ -47,7 +47,7 @@ def main():
             store[magaza_adi]={"satislar":[satis_tutari],"store":[a]}
 
     for magaza in store:
-        
+        print(f"{magaza} mağazasında toplam satış tutari:{magaza_satis_tutar(store[magaza])}")
         for a in store[magaza]["store"]:
             print(a)
 def magaza_satis_tutar(magaza_dict):
