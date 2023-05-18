@@ -4,7 +4,11 @@ class magaza_sinifi:
         self.__satici_adi=satici_adi
         self.__satici_cinsi=satici_cinsi
         self.__satis_tutari=satis_tutari
+    def get_magaza_adi(self):
+        return self.__magaza_adi
     
+    def set_magaza_adi(self, magaza_adi):
+        self.__magaza_adi=magaza_adi
 
     def get_satici_adi(self):
         return self.__satici_adi
